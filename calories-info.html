@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Infomation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Paytone+One&family=Poiret+One&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="main text-center mt-5 calories-info-page">
+        <section class="steps-form">
+            <div class="steps-row setup-panel">
+                <div class="steps-container">
+                    <div class="steps-step goal-step">
+                        <a href="./index.html" type="button" class="btn btn-indigo btn-circle" id="goal-stepper"></a>
+                        <hr class="steps-separator">
+                    </div>
+                    <div class="steps-step user-info-step">
+                        <a href="./user-info.html" type="button" class="btn btn-default btn-circle"
+                            disabled="" id="user-info-stepper"></a>
+                        <hr class="steps-separator">
+                    </div>
+                    <div class="steps-step calories-info-step">
+                        <a href="./calories-info.html" type="button" class="btn btn-default btn-circle"
+                            disabled="" id="calories-info-stepper"></a>
+                        <hr class="steps-separator">
+                    </div>
+                    <div class="steps-step recipes-step">
+                        <a href="./recipes.html" type="button" class="btn btn-default btn-circle"
+                            disabled="disabled" id="recipes-stepper"></a>
+                        <hr class="w-10">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="title-page">
+            <div>
+                <h2 >
+                    Daily Caloric Requirements
+                </h2>
+            </div>
+        </section>
+        <hr class="hrblue">
+        <section class="selection-sect ps-3 pe-3">
+        <p> Your estimated daily caloric intake for <span ><strong id="span-goal">weight loss</strong></span> is: <span><strong id="span-calories">2000 calories</strong></span></p>
+        <div id="calories-required" class="d-flex justify-content-center mb-3 flex-wrap calories-requirements">
+            <button type="button" class="btn active" id="btn-goal-calories">
+                <h4 id="btn-goal-num" class="m-0 ">1500 cal</h4>
+                <p id="btn-goal-name" class="m-0">Weight-loss</p>
+            </button>
+            <button type="button" class="btn" id="btn-maintainence-calories">
+                <h4 id="btn-maintainence-num" class="m-0 font-weight-bold">1500 cal</h4>
+                <p id="btn-maintainence-name" class="m-0">Maintainence</p>
+            </button>
+        </div>
+        </section>
+        <section class="description-sect ps-3 pe-3" id="calories-description">
+            <article class="mb-3 maintainence-article"> 
+                <strong>Maintainence calories</strong> follows a nutritional guideline of <strong>50% carbs, 20% protein, 30% fats.</strong> 
+                It is calculated base on your body information and physical activity level.
+            </article>
+            <hr class="hrblue">
+            <article id="goal-article">
+                <p id="weight-loss-article"class="article m-0 d-none">
+                    <span>Weight loss</span> follows a <span>50% / 20% / 30%</span> guideline.<br>Compared to maintainence, it has a deficit of 500 cal.
+                    For most people, a calorie deficit of 500 calories per day is sufficient for weight loss.</p>
+
+                <p id="muscle-gain-article"class="article m-0 d-none">
+                    <span>Muscle gain</span> folllows a <span>50% / 30% / 20%</span> guideline.<br>Compared to maintainence, it has a surplus of 500 cal 
+                    with an increase intake of proteins and a decrease in fats. </p> 
+
+                <p id="tone-up-article"class="article m-0 d-none">
+                    <span>Tone up</span> folllows a <span>40% / 30% / 30%</span> guideline.<br> Compared to maintainence, it has a deficit of 300 cal 
+                    with an increase intake of proteins and a decrease in carbohydrates.</p>       
+                <p>The respective breakdown of nutrients are shown in the table below.</p>
+            </article>
+        </section>
+        <section class="ps-3 pe-3">
+            <div class="container nutrient-table">
+                <div class="row border-bottom h-25">
+                    <div class="col">
+                        Nutrientional Guide
+                    </div>
+                </div>
+                <div class="row border-bottom h-25">
+                    <div class="col-3"><strong>Calories</strong></div>
+                    <div class="col-3">Carbs</div>
+                    <div class="col-3">Protein</div>
+                    <div class="col-3">Fats</div>
+                </div>
+                <div class="row h-25">
+                    <div class="row">
+                        <div class="col-3 " id="calories-num">
+                            2000cal
+                        </div>
+                        <div class="col-9 ">
+                            <div class="row border-bottom" id="nutrient-table-percentage">
+                                <div class="col-4" id="carbs-in-per">Carbs</div>
+                                <div class="col-4" id="prot-in-per">Protein</div>
+                                <div class="col-4" id="fats-in-per">Fats</div>
+                            </div>
+                            <div class="row border-bottom" id="nutrient-table-cal">
+                                <div class="col-4" id="carbs-in-cal">Carbs</div>
+                                <div class="col-4" id="prot-in-cal">Protein</div>
+                                <div class="col-4" id="fats-in-cal">Fats</div>
+                            </div>
+                            <div class="row" id="nutrient-table-grams">
+                                <div class="col-4" id="carbs-in-gram">Carbs</div>
+                                <div class="col-4" id="prot-in-gram">Protein</div>
+                                <div class="col-4" id="fats-in-gram">Fats</div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+    
+    
+            </div>
+          
+        </section>
+        <section class="footer-sect">
+        <button id="btn-get-recipes" type="button" class="btn">Get Recipes</button>
+        </section>
+    </div>
+
+    <script type="module" src="./calories-info.js"></script>
+</body>
+
+</html>

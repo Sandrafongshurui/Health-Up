@@ -1,4 +1,4 @@
-#### Application link : [Health Up](https://sandrafongshurui.github.io/Health-Up/index.html)
+### Application link : [Health Up](https://sandrafongshurui.github.io/Health-Up/index.html)
 
 ---------------------
 

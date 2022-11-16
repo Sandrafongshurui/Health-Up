@@ -1,4 +1,6 @@
-CONTENTS OF THIS FILE
+##CONTENTS OF THIS FILE
+
+####Application link : [Helath Up](https://sandrafongshurui.github.io/Health-Up/index.html)
 ---------------------
 
  * Introduction
@@ -8,32 +10,32 @@ CONTENTS OF THIS FILE
  * Future Features
 
 ---------------------
- Introduction:
+ ####Introduction
  This is a web application called "Health Up" which helps the user achieve their health goal, by calculating the calories they need and recommending recipes for them.
 
- Application Usage
+ ####Application Usage
  
- 1) Index-page
+ 1. Index-page
  -User indicates goal (weight loss, muscle gain, tone up)
  -Brings them to user-info page
 
- 2) User-Info-Page
+ 2. User-Info-Page
  -User fills up the form (gender, age, height, weight, physical activity)
  -Click calculate, brings them to calories-info-page.
 
- 3) Calories-info-page
+ 3. Calories-info-page
  -2 options to choose from, user's selected goal or maintainence
  -Each option will render their specific percentage, calories, grams of each nutrient (carbs, protein, fats) in the disaplyed table
  -Calculations are done base on the provided information in the user-info-page
  
- 4) Recipe-Page
+ 4. Recipe-Page
  -Fetches from API and get back a list of recipes
  -Display those recepies that meets the needs of the user's calories and nutrients
  -A table that shows your estimated calories per meal along with the nutrients breakdown.
  -A filter with several options base on selected dietary, which will then display the recipes of teh selected filter
 
 ---------------------
-Features
+####Features
 
 1) Usage of local storage, so users do not need to re-fill their information
 
@@ -45,7 +47,7 @@ Features
 
 
 ---------------------
-Challenges
+####Challenges
 1) Using local storage properly, if user does not follow the intended flow, how will the information show?
 
 2) Getting the buttons to toggle correctly
@@ -54,10 +56,10 @@ Challenges
 
 4) Time management
 
-5) Local storage problem to retrivinng recipes, 403 forbidden error occurs randomly.
+5) Local storage problem to retrievinng recipes, 403 forbidden error occurs randomly.
 
 ---------------------
-Techniques/Framework
+####Techniques/Framework
 
 1) Used bootstrap and bootstrap.bundle for dropdown filter
 
@@ -68,7 +70,7 @@ Techniques/Framework
 4) Javascript, CSS, HTML
 
 ---------------------
-Future Features
+####Future Features
 
 1) Able to have user login account
 
